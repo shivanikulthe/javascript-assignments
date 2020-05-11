@@ -2,15 +2,37 @@
     <html>
     <head>
     <h1>greatset number</h1>
-    <p id="demo">finding max of 3</p>
+    <p>finding max of 3</p>
     <script>
- function greatestno(a,b,c){
-    max=a>b?(a>c?a:c):(b>c?b:c)
-    return max;
+ function greatestno(){
+ var a,b,c;
+ a=Number(document.getElementById("N").value);
+ b=Number(document.getElementById("O").value);
+ c=Number(document.getElementById("P").value);
+    if(a>b && a>c)
+		{
+			window.alert(a+"-is greatest");
+		}
+		else if(b>a && b>c)
+		{
+			window.alert(b+"-is greatst");
+		}
+		else if(c>a && c>b)
+		{
+			window.alert(c+"is greatest");
+		}
+  
     
-};
+}
 </script>
-
-<button onclick=document.getElementById("demo").innerHTML=greatestno(1,1,2);>test max</button>
 </head>
+<body>
+Enter number 1:<input type="text" id="N"></input><br>
+Enter number 2:<input type="text" id="O"></input><br>
+Enter number 3:<input type="text" id="P"></input><br>
+
+
+<button onclick="greatestno()">test max</button>
+</body>
+
 </html>
