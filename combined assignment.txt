@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>greatset number</h1>
+    <p id="demo">finding max of 3</p>
+    <script>
+ function greatestno(a,b,c){
+    max=a>b?(a>c?a:c):(b>c?b:c)
+    return max;
+    
+};
+</script>
+
+<button onclick=document.getElementById("demo").innerHTML=greatestno(1,1,2);>test max</button>
+<h1>using button click</h1>
+<p id="demo"></p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML=
+"shivani!"'>click here.</button>
+<h1>using alert</h1>
+<button type="button" onclick='window.alert("shivani!")'>click here.</button>
+<h1>using console</h1>
+<button type="button" onclick='console.log("shivani!")'>click here.</button>
+
+
+
+<h1>printing name dyanamically at runtime</h1>
+<h1 id="one"></h1>
+<h2 id="two"></h2>
+<h3 id="three"></h3>
+<h4 id="four"></h4>
+<h5 id="five"></h5>
+<script>
+document.getElementById("one").innerHTML="shivani!";
+document.getElementById("two").innerHTML="shivani!";
+document.getElementById("three").innerHTML="shivani!";
+document.getElementById("four").innerHTML="shivani!";
+document.getElementById("five").innerHTML="shivani!";
+
+</script>
+
+
+</body>
+</html>
