@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    <h1>greatset number</h1>
+    <p id="demo">finding max of 3</p>
+    <script>
+ function greatestno(a,b,c){
+    max=a>b?(a>c?a:c):(b>c?b:c)
+    return max;
+    
+};
+</script>
+
+<button onclick=document.getElementById("demo").innerHTML=greatestno(1,1,2);>test max</button>
+</head>
+</html>
