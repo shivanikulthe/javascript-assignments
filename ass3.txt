@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>printing name dyanamically at runtime</h1>
+<h1 id="one"></h1>
+<h2 id="two"></h2>
+<h3 id="three"></h3>
+<h4 id="four"></h4>
+<h5 id="five"></h5>
+<script>
+document.getElementById("one").innerHTML="shivani!";
+document.getElementById("two").innerHTML="shivani!";
+document.getElementById("three").innerHTML="shivani!";
+document.getElementById("four").innerHTML="shivani!";
+document.getElementById("five").innerHTML="shivani!";
+
+</script>
+
+
+</body>
+</html>
+
