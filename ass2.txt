@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>using button click</h1>
+<p id="demo"></p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML=
+"shivani!"'>click here.</button>
+<h1>using alert</h1>
+<button type="button" onclick='window.alert("shivani!")'>click here.</button>
+<h1>using console</h1>
+<button type="button" onclick='console.log("shivani!")'>click here.</button>
+
+
+
+</body>
+</html>
+
