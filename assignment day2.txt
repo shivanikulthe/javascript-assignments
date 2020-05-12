@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>task1:largest element in array</h2>
+
+<p id="demo"></p>
+
+<script>
+var points = [40, 100, 1, 5, 25, 10,20,50,55,120];
+document.getElementById("demo").innerHTML = myArrayMax(points);
+
+function myArrayMax(arr) {
+  return Math.max.apply(null, arr);
+}
+</script>
+<h2>task2:printing name in p tag</h2>
+<p id="demo1">hi</p>
+<button type="button" onclick='document.getElementById("demo1").innerHTML = "shivani"'>click</button>
+<h2>task3:unhiding hidden name</h2>
+<p id="demo3"></p>
+<button onclick="unhide()">click</button>
+<script>
+function unhide(){
+document.getElementById("demo3").innerHTML="shivani!";
+}
+</script>
+<h2>task4:changing font size</h2>
+<p id="demo4" style="font-size:4">shivani</p>
+<button type="button" onclick="document.getElementById('demo4').style.fontSize='7px'">click</button>
+<h2>task5:display date time</h2>
+<p id="demo5"></p>
+<button onclick="datetime()">click</button>
+<script>
+function datetime(){
+var d = new Date("2015-03-25T12:00:00Z");
+document.getElementById("demo5").innerHTML = d;
+}
+</script>
+<h2>task6:copying data</h2>
+<script>
+function copy(){
+var a=document.getElementById("a");
+var b=document.getElementById("b");
+b.value=a.value;
+}
+</script>
+<label>First</label><input type="text" name="a" id="a">
+<label>Second</label><input type="text" name="b" id="b">
+<input type="button" value="copy" onclick="copy();">
+<h2>task7:arraynumbers ascending</h2>
+<button onclick="ascendingfunc()">click</button>
+<p id="demo7"></p>
+<script>
+var points = [40, 100, 1, 5, 25, 10,20,55,83,90];
+document.getElementById("demo7").innerHTML = points;
+function ascendingfunc() {
+  points.sort(function(a, b){return a-b});
+  document.getElementById("demo7").innerHTML = points;
+}
+</script>
+<h2>task8:array names descending</h2>
+<button onclick="descendingfunc()">click</button>
+<p id="demo8"></p>
+<script>
+var names = ["shivani", "shiv", "shiva", "shivi"];
+document.getElementById("demo8").innerHTML = names;
+function descendingfunc() {names.sort();
+  names.reverse();
+  document.getElementById("demo8").innerHTML = names;
+}
+</script>
+<h2>task9:string having email-id</h2>
+<p id="demo9"></p>
+<script>
+var str1="shivanik5510@gmail.com";
+   var check=str1.includes("@");
+   document.getElementById("demo9").innerHTML="In my string @ is there:"+check;
+   </script>
+       
+
+<h2>task10:check mobile number</h2>
+<p id="demo10"></p>
+<script>
+ var str2="9130758645";
+      function myString(num)
+      {
+          var abc=num.length;
+          if(abc==10)
+          {
+              return true;
+          }
+          else 
+          return false;
+      }
+          document.getElementById("demo10").innerHTML="It contains exactly 10 digit:"+myString(str2);
+         </script>
+
+
+<h2>task11:function returning random number</h2>
+<p id="demo11"></p>
+<script>
+function randomfunc(min, max) {
+ return Math.floor(Math.random() * (max - min)) + min;
+}
+</script>
+<button onclick="document.getElementById('demo11').innerHTML = randomfunc(0,10)">click</button>
+</body>
+</html>
+
