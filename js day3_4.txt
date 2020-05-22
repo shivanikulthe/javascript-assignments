@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Arrow Function</h2>
+
+<p id='demo1'></p>
+<p id='demo2'></p>
+<button onclick="document.getElementById('demo1').innerHTML = arrow()";>click</button>
+<script>
+var arrow;
+arrow = function() {
+var i;
+var fact=1;
+var n=4
+for(i=1;i<=n;i++)
+{
+fact=fact*i;
+
+}
+  return fact;
+  }
+
+</script>
+
+
+</body>
+</html>
