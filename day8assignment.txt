@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>task1</h2>
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+class Employee
+{
+  constructor(i,n,s)
+  {
+    this.cid=i
+    this.cname=n
+    this.sal=s
+    
+  }
+get id()
+  {
+    return this.cid
+  }
+  set id(x)
+  {
+    this.cid=x
+  }
+  get name()
+  {
+    return this.cname
+  }
+  set name(x)
+  {
+    this.cname=x
+  }
+  get salary()
+  {
+    return this.sal
+  }
+  set salary(x)
+  {
+    this.sal=x
+  }
+netsal(x)
+{
+  return x-10*x/100;
+}
+}
+var a=new Employee("1","shivani",100000)
+var b=new Employee("2","shiv",20000)
+document.getElementById("demo").innerHTML="id "+a.cid+" "+"Name "+a.cname+" "+"Salary "+a.sal+" "+"Net "+a.netsal(100000)
+document.getElementById("demo1").innerHTML="id "+b.cid+" "+"Name "+b.cname+" "+"Salary "+b.sal+" "+"Net "+b.netsal(20000)
+
+</script>
+<h2>task2</h2>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<script>
+class student{
+    constructor(rn,n,m1,m2,m3)
+    {
+        this.rollno=rn
+        this.name=n
+        this.marks1=m1
+        this.marks2=m2
+        this.marks3=m3
+        this.total=function()
+        {
+            return this.marks1+this.marks2+this.marks3
+        }
+        this.percentage=function()
+        {
+            return this.total()*100/300
+        }
+    }
+
+}
+var a=new student(1,"shivani",76,85,67)
+var b=new student(2,"shiv",62,76,87)
+document.getElementById("demo2").innerHTML=a.rollno+" "+a.name+" "+a.marks1+" "+a.marks2+" "+a.marks3+" "+a.total()+" "+a.percentage()
+document.getElementById("demo3").innerHTML=b.rollno+" "+b.name+" "+b.marks1+" "+b.marks2+" "+b.marks3+" "+b.total()+" "+b.percentage()
+</script>
+
+
+</body>
+</html>
