@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>self invoking function printing name</h2>
+<p id="demo"></p>
+<script>
+(function myfunction(){
+document.getElementById("demo").innerHTML="shivani..!!";
+})();
+</script>
+<h2>self invoking function printing square of a number</h2>
+<p id="demo1"></p>
+<script>
+(function myfunction(n){
+document.getElementById("demo1").innerHTML=n*n;
+})(5);
+</script>
+<h2>Function doing sum of numbers which aren't passed as paramenters</h2>
+<p id="demo2"></p>
+<script>
+function Sum(){
+var i=0;
+var sum=0;
+var x=arguments.length;
+for(i=0;i<x;i++)
+{
+sum=sum+arguments[i];
+}
+return sum;
+}
+document.getElementById("demo2").innerHTML=Sum(1,1,2,1,5,0,1,8);
+</script>
+</body>
+</html>
