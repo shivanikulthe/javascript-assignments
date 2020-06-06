@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-  <p id="1">i am shivan.</p>
+  <p id="1">i am shivani.</p>
   <p id="2">i love learning foreign languages.</p>
   <p id="3">i'm doing cdac in vita mumbai. </p>
 <script>
