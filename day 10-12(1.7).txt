@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p id="1">i am shivan.</p>
+  <p id="2">i love learning foreign languages.</p>
+  <p id="3">i'm doing cdac in vita mumbai. </p>
+<script>
+var a= document.getElementsByTagName("p")
+for(let i=0;i<a.length;i++)
+{
+    a[i].style.background="blue"
+}
+var b=a.length
+document.write(b)
+
+</script>
+
+
+</body>
+</html>
