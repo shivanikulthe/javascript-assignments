@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <style>
+      #s
+      {
+          color: white;
+          background: blue;
+
+      }
+      
+    </style>
+ 
+    
+<body>
+    <p id="s">shivani..!!</p>
+    <button type="button" onclick="ch()">click</button>
+<script>
+
+   function ch()
+   {
+   var a= document.getElementById("s")
+   a.style.background="white"
+   a.style.color="blue"
+       
+   }
+
+</script>
+
+
+</body>
+</html>
