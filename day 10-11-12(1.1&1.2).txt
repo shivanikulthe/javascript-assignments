@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Task1</h2>
+<p id="demo" style="color:red">Shivani</p>
+<button onclick=myfun()>Click me to change the color</button>
+<script>
+function myfun(){
+document.getElementById("demo").style.color="blue";
+}
+</script>
+<h2>Task2</h2>
+<h1 id="d1" style="text-align:left">Shivani</h1>
+<button onclick="myfunc()">Click me to align to right</button>
+<script>
+function myfunc(){
+document.getElementById("d1").style.textAlign="right";
+}
+</script>
+</body>
+</html> 
