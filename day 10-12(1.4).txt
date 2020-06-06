@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <style>
+      #textbox
+      {
+          color:black
+      }
+      
+    </style>
+ 
+    
+<body>
+    <input type="radio" id="red" name="color" value="red">
+<label for="f1">red</label><br>
+<input type="radio" id="blue" name="color" value="blue">
+<label for="f2">blue</label><br>
+<input type="radio" id="green" name="color" value="green">
+<label for="f3">green</label> <br>
+    <input type="text" id="textbox"><br>
+    <input type="button" onclick="ch()" value=click>
+<script>
+function ch()
+{
+  var a= document.getElementsByName("color")
+  for(let i=0;i<a.length;i++)
+  {
+      if(a[i].checked)
+      {
+          document.getElementById("textbox").style.color=a[i].value
+      }
+  }
+
+
+
+
+
+}
+
+</script>
+
+
+</body>
+</html>
